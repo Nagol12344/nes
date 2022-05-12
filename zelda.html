@@ -1,9 +1,29 @@
-<script src="nesnes.js">
-var NesNes = require("nesnes");
-var canvas = getElementById("NES")
-var emulator = new NesNes( canvas );
-emulator.load( "/roms/zelda.nes", true );
+<!DOCTYPE html>
 
-</script>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>Zelda</title>
+	
 
-<canvas id="NES" width="240" height="160"></canvas>
+<link rel="stylesheet" href="stylepopup.css">
+		<script type="text/javascript" src="https://unpkg.com/jsnes@1.2.1/dist/jsnes.min.js"></script>
+		<script type="text/javascript" src="nes-embed.js"></script>
+		<script>window.onload = function(){nes_load_url("nes-canvas", "./roms/zelda.nes");}</script>
+	
+
+		
+		
+	
+		</div>
+
+	</head>
+	<body >
+		<div >
+			
+			<canvas  id="nes-canvas" width="256" height="240" style="width: 100%"/>
+		 
+		</div>
+		
+	</body>
+</html>
